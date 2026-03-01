@@ -13,8 +13,6 @@ class Solution:
             char_index[s[right]] = right
             max_len = max(max_len, right - left + 1)
         return max_len
-    # Time complexity - O(n)
-    # Space complexity - O(m)
 
 # Solution 1 - 100% runtime and 100% memory
 class Solution:
@@ -26,6 +24,8 @@ class Solution:
         left=0
         right=0
         max_len=0
+    # Time complexity - O(n)
+    # Space complexity - O(m)
 
         while right<len(s):
             while char_map[ord(s[right])-ord("!")] == True: # ! for the start of 95 ASCII printable characters
