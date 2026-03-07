@@ -13,3 +13,12 @@ class Solution:
                 res += prefix_sum[diff]
             prefix_sum[running_sum] = prefix_sum.get(running_sum, 0) + 1
         return res
+    # Time complexity: O(n)
+    # Space complexity: O(n)
+
+# nums = [2,-1,1,2]
+# k = 2
+# expected = 4
+# nums = [1,1,1]
+# k = 2
+# expected = 2
