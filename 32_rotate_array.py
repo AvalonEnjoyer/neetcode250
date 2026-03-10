@@ -27,15 +27,7 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         n = len(nums)
-        k = k % n
-        nums[:n - k], nums[-k:] = nums[-k:], nums[:n - k]
-        # Time complexity: O(n)
-        # Space complexity: O(1) - because in Python array slicing create a new array in memory
-
-# nums = [1,2,3,4,5,6,7,8]
-# k = 4
-# expected = [5,6,7,8,1,2,3,4]
-
-# nums = [1000,2,4,-3]
-# k = 2
-# expected = [4,-3,1000,2]
+        k = k%n
+        nums[:n-k], nums[-k:] =nums[-k:], nums[:n-k]
+    # Time complexity: O(n)
+    # Space complexity: O(n) because in Python slicing creates a new list in memory
