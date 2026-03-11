@@ -36,3 +36,23 @@ class Solution:
         return s[min_coords[0]:min_coords[1]]
     # Time complexity: O(n)
     # Space complexity: O(1)
+
+# s = "OUZODYXAZV"
+# t = "XYZ"
+# expected = "YXAZ"
+
+# s = "xyz"
+# t = "xyz"
+# expected = "xyz"
+#
+# s = "x"
+# t = "xy"
+# expected= ""
+
+# s="ADOBECODEBANC"
+# t="ABC"
+# expected="BANC"
+
+# s="aaaaaaaaaaaabbbbbcdd"
+# t="abcdd"
+# expecetd = "abbbbbcdd"
